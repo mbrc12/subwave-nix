@@ -16,6 +16,10 @@ in
 
     file = with builtins; {
     	".config/user-dirs.dirs".text = readFile ./config/user-dirs.dirs;
+	".config/nvim" = {
+		source = ./config/nvim;
+		recursive = true;
+	};
     };
 
     # You do not need to change this if you're reading this in the future.
