@@ -1,6 +1,7 @@
 { lib, pkgs, ... }:
 let 
 	user = "subwave";
+	conf = ".config";
 in
 	{
 	home = {
@@ -27,11 +28,11 @@ in
 		homeDirectory = "/home/${user}";
 
 		file = with builtins; {
-			".config/kitty" = {
+			"${conf}/kitty" = {
 				source = ./config/kitty;
 			};
 
-			".config/nvim" = {
+			"${conf}/nvim" = {
 				source = ./config/nvim;
 				recursive = true;
 			};
@@ -39,7 +40,7 @@ in
 			# You still need to install tpm and run <C-x>I to install packages
 			"./.tmux.conf".text = readFile ./config/tmux.conf;
 
-			"./config/zathura/zathurarc".text = readFile ./config/zathurarc;
+			"${conf}/zathura/zathurarc".text = readFile ./config/zathurarc;
 		};
 
 		# You do not need to change this if you're reading this in the future.
