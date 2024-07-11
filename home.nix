@@ -15,7 +15,7 @@ in
     homeDirectory = "/home/${user}";
 
     file = with builtins; {
-    	".config/user-dirs.dirs".text = readFile "config/user-dirs.dirs";
+    	".config/user-dirs.dirs".text = readFile "./config/user-dirs.dirs";
     };
 
     # You do not need to change this if you're reading this in the future.
