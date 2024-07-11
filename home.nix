@@ -14,6 +14,10 @@ in
     username = "${user}";
     homeDirectory = "/home/${user}";
 
+    file = with builtins; {
+    	".config/user-dirs.dirs" = readFile "config/user-dirs.dirs";
+    };
+
     # You do not need to change this if you're reading this in the future.
     # Don't ever change this after the first build.  Don't ask questions.
     stateVersion = "24.05";
