@@ -1,46 +1,46 @@
 { lib, pkgs, ... }:
 let 
-user = "subwave";
+	user = "subwave";
 in
-{
-  home = {
-    packages = with pkgs; [
-      home-manager
-	
-          tmux		
-		
-	  kitty
+	{
+	home = {
+		packages = with pkgs; [
+			home-manager
 
-      neovim
-	  tree-sitter
+			tmux		
 
-	  nodejs
+			kitty
+
+			neovim
+			tree-sitter
+
+			nodejs
 
 
-      hello
-    ];
+			hello
+		];
 
-    # This needs to actually be set to your username
-    username = "${user}";
-    homeDirectory = "/home/${user}";
+		# This needs to actually be set to your username
+		username = "${user}";
+		homeDirectory = "/home/${user}";
 
-    file = with builtins; {
-	    ".config/user-dirs.dirs".text = readFile ./config/user-dirs.dirs;
+		file = with builtins; {
+			".config/user-dirs.dirs".text = readFile ./config/user-dirs.dirs;
 
-	    ".config/kitty" = {
-		    source = ./config/kitty;
-	    };
+			".config/kitty" = {
+				source = ./config/kitty;
+			};
 
-	    ".config/nvim" = {
-	    	    source = ./config/nvim;
-		    recursive = true;
-	    };
+			".config/nvim" = {
+				source = ./config/nvim;
+				recursive = true;
+			};
 
-	    "./tmux.conf".text = readFile ./config/tmux.conf;
-    };
+			"./tmux.conf".text = readFile ./config/tmux.conf;
+		};
 
-    # You do not need to change this if you're reading this in the future.
-    # Don't ever change this after the first build.  Don't ask questions.
-    stateVersion = "24.05";
-  };
+		# You do not need to change this if you're reading this in the future.
+		# Don't ever change this after the first build.  Don't ask questions.
+		stateVersion = "24.05";
+	};
 }
