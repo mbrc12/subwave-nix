@@ -6,11 +6,16 @@ in
   home = {
     packages = with pkgs; [
       home-manager
+	
+          tmux		
+		
+	  kitty
 
       neovim
 	  tree-sitter
 
-	  node
+	  nodejs
+
 
       hello
     ];
@@ -20,7 +25,18 @@ in
     homeDirectory = "/home/${user}";
 
     file = with builtins; {
-    	".config/user-dirs.dirs".text = readFile ./config/user-dirs.dirs;
+	    ".config/user-dirs.dirs".text = readFile ./config/user-dirs.dirs;
+
+	    ".config/kitty" = {
+		    source = ./config/kitty;
+	    };
+
+	    ".config/nvim" = {
+	    	    source = ./config/nvim;
+		    recursive = true;
+	    };
+
+	    "./tmux.conf".text = readFile ./config/tmux.conf;
     };
 
     # You do not need to change this if you're reading this in the future.
