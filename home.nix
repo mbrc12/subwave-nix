@@ -6,6 +6,8 @@ in
 	home = {
 		packages = with pkgs; [
 			home-manager
+			tree
+			ripgrep
 
 			tmux		
 
@@ -17,7 +19,7 @@ in
 			zathura
 
 			fira-sans
-			fira-code
+			fira-code-nerdfont
 		];
 
 		# This needs to actually be set to your username
