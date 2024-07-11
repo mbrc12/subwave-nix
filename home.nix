@@ -9,8 +9,6 @@ in
 
 			tmux		
 
-			kitty
-
 			neovim
 			tree-sitter
 
@@ -36,7 +34,7 @@ in
 				recursive = true;
 			};
 
-			"./tmux.conf".text = readFile ./config/tmux.conf;
+			"./.tmux.conf".text = readFile ./config/tmux.conf;
 		};
 
 		# You do not need to change this if you're reading this in the future.
