@@ -19,6 +19,8 @@ in
 			nodejs
 
 			zathura
+
+			(nerdfonts.override { fonts = [ "FiraCode" "Iosevka"]; })
 		];
 
 		# This needs to actually be set to your username
@@ -54,4 +56,6 @@ in
 			userName = "Mriganka Basu Roy Chowdhury";
 		};
 	};
+
+	fonts.fontconfig.enable = true;
 }
