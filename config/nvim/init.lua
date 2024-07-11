@@ -1137,15 +1137,15 @@ require('lazy').setup({
     'lervag/vimtex',
     lazy = false,
     config = function()
-      vim.g.tex_flavor = 'latex'
+      vim.g.tex_flavor = 'tectonic'
       vim.g.vimtex_quickfix_ignore_filters = { 'Underfull', 'Overfull' }
       -- { 'Underfull', 'Overfull', 'Token not allowed', 'Size', 'Draft', 'Citation', 'reference', 'Reference', 'Font shape',
       --   'recommended' }
       -- vim.g.vimtex_view_method = "general"
       vim.g.Tex_IgnoreLevel = 8
-      vim.g.vimtex_compiler_latexmk = {
+      vim.g.vimtex_compiler_tectonic = {
         continuous = 1,
-        options = { '-shell-escape', '-bibtex' },
+        -- options = { '-shell-escape', '-bibtex' },
       }
       vim.g.vimtex_view_method = 'zathura_simple'
     end,

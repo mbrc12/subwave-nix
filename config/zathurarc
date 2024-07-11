@@ -1,4 +1,4 @@
-set font "Fira Sans 15"
+set font "Ubuntu Sans 15"
 
 set recolor-lightcolor \#1d2021
 set recolor-darkcolor \#928374

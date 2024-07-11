@@ -20,6 +20,8 @@ in
 
 			zathura
 
+			tectonic
+
 			(nerdfonts.override { fonts = [ "FiraCode" "Iosevka"]; })
 		];
 
