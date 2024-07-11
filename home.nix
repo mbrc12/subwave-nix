@@ -1,11 +1,11 @@
-{ lib, nixpkgs, unstable, ... }:
+{ lib, pkgs, unstable, ... }:
 let 
 	user = "subwave";
 	conf = ".config";
 in
 	{
 	home = {
-		packages = with nixpkgs; [
+		packages = with pkgs; [
 			home-manager
 			tree
 			ripgrep
