@@ -1189,7 +1189,7 @@ highlight(0, 'NormalFloat', { link = 'Normal' })
 -- vim.o.guifont = "CommitMono Nerd Font:h15"
 -- vim.o.guifont = "Hurmit Nerd Font:h14"
 -- vim.o.guifont = "JetBrainsMono Nerd Font:h15"
-vim.o.guifont = "FiraCode Nerd Font:h14.5"
+-- vim.o.guifont = "FiraCode Nerd Font:h14.5"
 -- vim.o.guifont = "Hasklug Nerd Font:h16"
 
 function NeovideFullscreen()
