@@ -13,6 +13,8 @@ in
 			tmux		
 
 			unstable.neovim
+			unstable.neovide
+
 			tree-sitter
 
 			nodejs
@@ -21,8 +23,6 @@ in
 
 			fira-sans
 			fira-code-nerdfont
-
-			unstable.discord
 		];
 
 		# This needs to actually be set to your username
