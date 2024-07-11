@@ -13,16 +13,12 @@ in
 			tmux		
 
 			unstable.neovim
-			unstable.neovide
 
 			tree-sitter
 
 			nodejs
 
 			zathura
-
-			fira-sans
-			fira-code-nerdfont
 		];
 
 		# This needs to actually be set to your username
