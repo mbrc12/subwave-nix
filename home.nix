@@ -6,8 +6,11 @@ in
   home = {
     packages = with pkgs; [
       home-manager
-	  tree-sitter
+
       neovim
+	  tree-sitter
+
+	  node
 
       hello
     ];
