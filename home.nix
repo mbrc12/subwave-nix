@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }:
+{ lib, pkgs, unstable, ... }:
 let 
 	user = "subwave";
 	conf = ".config";
@@ -12,7 +12,7 @@ in
 
 			tmux		
 
-			neovim
+			unstable.neovim
 			tree-sitter
 
 			nodejs

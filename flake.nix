@@ -4,13 +4,15 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-24.05";
 
+	unstable.url = "nixpkgs/nixos-unstable";
+
     home-manager = {
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, unstable, home-manager, ... }:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -19,6 +21,7 @@
       homeConfigurations = {
         subwave-base = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
+		  inherit unstable;
           modules = [ ./home.nix ];
         };
       };
