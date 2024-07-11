@@ -14,6 +14,8 @@ in
 
 			nodejs
 
+			zathura
+
 			fira-sans
 			fira-code
 		];
@@ -34,6 +36,8 @@ in
 
 			# You still need to install tpm and run <C-x>I to install packages
 			"./.tmux.conf".text = readFile ./config/tmux.conf;
+
+			"./config/zathura/zathurarc".text = readFile ./config/zathurarc;
 		};
 
 		# You do not need to change this if you're reading this in the future.

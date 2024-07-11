@@ -1,0 +1,13 @@
+set font "Fira Sans 15"
+
+set recolor-lightcolor \#1d2021
+set recolor-darkcolor \#928374
+
+set synctex true
+# set synctex-editor-command "/home/subwave/.local/bin/nvr --remote-silent +%{line} %{input}"
+
+set selection-clipboard clipboard
+
+set default-bg \#221C22
+set highlight-color \#889FC0
+set highlight-active-color \#800000
