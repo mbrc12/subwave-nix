@@ -1152,8 +1152,9 @@ require('lazy').setup({
       vim.g.vimtex_view_method = 'zathura_simple'
     end,
     keys = {
-      { '<leader>tt', '<cmd>:VimtexCompile<CR>', desc = 'vimtex compile' },
-      { '<leader>tv', '<cmd>:VimtexView<CR>',    desc = 'vimtex view' },
+      { '<leader>tt', '<cmd>:VimtexCompile<CR>',       desc = 'vimtex compile' },
+      { '<leader>tv', '<cmd>:VimtexView<CR>',          desc = 'vimtex view' },
+      { '<C-c>',      ':w<cr><cmd>:VimtexCompile<CR>', desc = 'vimtex compile' },
     },
   },
 }, {})
