@@ -14,8 +14,8 @@ in
 
 			nodejs
 
-
-			hello
+			fira-sans
+			fira-code
 		];
 
 		# This needs to actually be set to your username
@@ -23,8 +23,6 @@ in
 		homeDirectory = "/home/${user}";
 
 		file = with builtins; {
-			".config/user-dirs.dirs".text = readFile ./config/user-dirs.dirs;
-
 			".config/kitty" = {
 				source = ./config/kitty;
 			};
@@ -34,6 +32,7 @@ in
 				recursive = true;
 			};
 
+			# You still need to install tpm and run <C-x>I to install packages
 			"./.tmux.conf".text = readFile ./config/tmux.conf;
 		};
 
