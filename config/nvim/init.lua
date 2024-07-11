@@ -1137,7 +1137,9 @@ require('lazy').setup({
     'lervag/vimtex',
     lazy = false,
     config = function()
-      vim.g.tex_flavor = 'tectonic'
+      vim.g.tex_flavor = 'latex'
+      vim.g.vimtex_compiler_method = "tectonic"
+      vim.g.vimtex_quickfix_method = "pplatex"
       vim.g.vimtex_quickfix_ignore_filters = { 'Underfull', 'Overfull' }
       -- { 'Underfull', 'Overfull', 'Token not allowed', 'Size', 'Draft', 'Citation', 'reference', 'Reference', 'Font shape',
       --   'recommended' }

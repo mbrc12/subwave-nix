@@ -21,6 +21,7 @@ in
 			zathura
 
 			tectonic
+			pplatex
 
 			(nerdfonts.override { fonts = [ "FiraCode" "Iosevka"]; })
 		];
