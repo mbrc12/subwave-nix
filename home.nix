@@ -41,8 +41,17 @@ in
 			"${conf}/zathura/zathurarc".text = readFile ./config/zathurarc;
 		};
 
+
 		# You do not need to change this if you're reading this in the future.
 		# Don't ever change this after the first build.  Don't ask questions.
 		stateVersion = "24.05";
+	};
+
+	programs = {
+		git = {
+			enable = true;
+			userEmail = "mbrc12@gmail.com";
+			userName = "Mriganka Basu Roy Chowdhury";
+		};
 	};
 }

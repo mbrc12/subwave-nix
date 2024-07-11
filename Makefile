@@ -2,8 +2,14 @@
 update:
 	home-manager switch --flake .#subwave-base
 	cp ext-config/user-dirs.dirs ~/.config/user-dirs.dirs
-	mkdir -p ~/ext 
-	mkdir -p ~/media
+	mkdir -p ~/ext/templates 
+	mkdir -p ~/ext/public
+	mkdir -p ~/media/music
+	mkdir -p ~/media/pics
+	mkdir -p ~/media/vids
+	mkdir -p ~/downloads
+	mkdir -p ~/docs
+	mkdir -p ~/desktop
 
 clean:
 	nix-collect-garbage -d
