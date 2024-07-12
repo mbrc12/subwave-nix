@@ -1,9 +1,9 @@
--- local colorscheme = 'gruvbox-baby'
+local colorscheme = 'gruvbox-baby'
 -- local colorscheme = "terafox"
 -- local colorscheme = "sonokai"
 -- local colorscheme = "zenwritten"
 -- local colorscheme = "everforest"
-local colorscheme = "kanagawa"
+-- local colorscheme = "kanagawa"
 -- local colorscheme = "dayfox"
 vim.g.sonokai_style = "maia"
 vim.g.sonokai_enable_italic = true

@@ -23,7 +23,7 @@ in
 			tectonic
 			pplatex
 
-			(nerdfonts.override { fonts = [ "FiraCode" "Iosevka"]; })
+			(nerdfonts.override { fonts = [ "FiraCode" "Iosevka" "Jetbrains Mono"]; })
 		];
 
 		# This needs to actually be set to your username
