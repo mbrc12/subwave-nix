@@ -1155,6 +1155,7 @@ require('lazy').setup({
       { '<leader>tt', '<cmd>:VimtexCompile<CR>',            desc = 'vimtex compile' },
       { '<leader>tv', '<cmd>:VimtexView<CR>',               desc = 'vimtex view' },
       { '<C-c>',      '<esc>:w<cr><cmd>:VimtexCompile<CR>', desc = 'vimtex compile', mode = 'i' },
+      { '<C-c>',      ':w<cr><cmd>:VimtexCompile<CR>',      desc = 'vimtex compile', mode = 'n' },
     },
   },
 }, {})
