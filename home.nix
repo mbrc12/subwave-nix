@@ -59,6 +59,10 @@ in
 			enable = true;
 			userEmail = "mbrc12@gmail.com";
 			userName = "Mriganka Basu Roy Chowdhury";
+
+			extraConfig = {
+				init.defaultBranch = "main";
+			};
 		};
 	};
 
