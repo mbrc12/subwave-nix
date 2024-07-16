@@ -1,10 +1,10 @@
 -- local colorscheme = 'gruvbox-baby'
 -- local colorscheme = "terafox"
 -- local colorscheme = "sonokai"
-local colorscheme = "srcery"
+-- local colorscheme = "srcery"
 -- local colorscheme = "zenwritten"
 -- local colorscheme = "everforest"
--- local colorscheme = "kanagawa"
+local colorscheme = "kanagawa"
 -- local colorscheme = "dayfox"
 -- local colorscheme = "edge"
 vim.g.edge_style = "aura"
