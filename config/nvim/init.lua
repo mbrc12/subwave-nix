@@ -987,6 +987,12 @@ require('lazy').setup({
   },
 
   {
+    "sainnhe/edge",
+    lazy = false,
+    priority = 1000,
+  },
+
+  {
     "zenbones-theme/zenbones.nvim",
     dependencies = { "rktjmp/lush.nvim" },
   },
