@@ -1,11 +1,14 @@
-local colorscheme = 'gruvbox-baby'
+-- local colorscheme = 'gruvbox-baby'
 -- local colorscheme = "terafox"
 -- local colorscheme = "sonokai"
+local colorscheme = "srcery"
 -- local colorscheme = "zenwritten"
 -- local colorscheme = "everforest"
 -- local colorscheme = "kanagawa"
 -- local colorscheme = "dayfox"
-vim.g.sonokai_style = "maia"
+-- local colorscheme = "edge"
+vim.g.edge_style = "aura"
+vim.g.sonokai_style = "atlantis"
 vim.g.sonokai_enable_italic = true
 vim.g.everforest_enable_italic = true
 vim.g.everforest_background = "hard"
@@ -988,6 +991,12 @@ require('lazy').setup({
 
   {
     "sainnhe/edge",
+    lazy = false,
+    priority = 1000,
+  },
+
+  {
+    "srcery-colors/srcery-vim",
     lazy = false,
     priority = 1000,
   },
