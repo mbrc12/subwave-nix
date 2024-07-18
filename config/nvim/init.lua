@@ -650,6 +650,9 @@ require('lazy').setup({
           filetypes = { 'latex', 'tex', 'bib', 'text' },
         },
 
+        julials = {
+        },
+
         svelte = {},
 
         -- pyright = {},
