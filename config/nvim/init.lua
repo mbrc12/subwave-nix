@@ -1,14 +1,13 @@
 -- local colorscheme = 'gruvbox-baby'
 -- local colorscheme = "terafox"
--- local colorscheme = "sonokai"
+local colorscheme = "sonokai"
 -- local colorscheme = "srcery"
 -- local colorscheme = "zenwritten"
 -- local colorscheme = "everforest"
-local colorscheme = "kanagawa"
+-- local colorscheme = "kanagawa"
 -- local colorscheme = "dayfox"
--- local colorscheme = "edge"
-vim.g.edge_style = "aura"
-vim.g.sonokai_style = "atlantis"
+-- local colorscheme = "melange"
+vim.g.sonokai_style = "maia"
 vim.g.sonokai_enable_italic = true
 vim.g.everforest_enable_italic = true
 vim.g.everforest_background = "hard"
@@ -993,12 +992,6 @@ require('lazy').setup({
   },
 
   {
-    "sainnhe/edge",
-    lazy = false,
-    priority = 1000,
-  },
-
-  {
     "srcery-colors/srcery-vim",
     lazy = false,
     priority = 1000,
@@ -1043,20 +1036,6 @@ require('lazy').setup({
 
       -- Enable transparent mode
       -- vim.g.gruvbox_baby_transparent_mode = 1
-    end,
-  },
-
-  {
-    'folke/tokyonight.nvim',
-    priority = 1000, -- Make sure to load this before all the other start plugins.
-    init = function()
-      -- Load the colorscheme here.
-      -- Like many other themes, this one has different styles, and you could load
-      -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      -- vim.cmd.colorscheme 'tokyonight-night'
-
-      -- You can configure highlights by doing something like:
-      -- vim.cmd.hi 'Comment gui=none'
     end,
   },
 
