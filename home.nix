@@ -23,6 +23,8 @@ in
 			tectonic
 			pplatex
 
+			tailwindcss
+
 			unstable.go
 			unstable.gopls
 
