@@ -1190,6 +1190,7 @@ end
 
 TextWidthConfig()
 
+vim.filetype.add { extension = { p8 = "pico8" } } -- add pico8 file type
 
 vim.cmd.colorscheme(colorscheme)
 
