@@ -1177,8 +1177,10 @@ local wk = require 'which-key'
 
 -- A custom setup to limit width via comments, primarily for latex or markdown documents.
 function TextWidthConfig()
-  wk.register({ "'f", "ms{gq}'s", desc = 'Format paragraph' })
-  wk.register({ "'f", 'gq', desc = 'Format paragraph', mode = 'v' })
+  wk.add({
+    { "'f", "ms{gq}'s", desc = 'Format paragraph' },
+    { "'f", 'gq',       desc = 'Format paragraph', mode = 'v' }
+  })
 
   vim.api.nvim_create_autocmd({ 'BufEnter' }, {
     pattern = { '*.md' },
