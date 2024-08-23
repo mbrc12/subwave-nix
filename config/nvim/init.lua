@@ -1173,12 +1173,12 @@ require('lazy').setup({
 
 local wk = require 'which-key'
 
-wk.register({ ["ec"] = { ":e ~/.config/nvim/init.lua<CR>", "edit config" } }, { prefix = "<leader>", mode = "n", })
+-- wk.register({ "<leader>ec", ":e ~/.config/nvim/init.lua<CR>", "edit config" } }, { prefix = "<leader>", mode = "n", })
 
 -- A custom setup to limit width via comments, primarily for latex or markdown documents.
 function TextWidthConfig()
-  wk.register({ ["'f"] = { "ms{gq}'s", 'Format paragraph' } }, {})
-  wk.register({ ["'f"] = { 'gq', 'Format paragraph' } }, { mode = 'v' })
+  wk.register({ "'f", "ms{gq}'s", desc = 'Format paragraph' })
+  wk.register({ "'f", 'gq', desc = 'Format paragraph', mode = 'v' })
 
   vim.api.nvim_create_autocmd({ 'BufEnter' }, {
     pattern = { '*.md' },
@@ -1237,11 +1237,11 @@ vim.g.neovide_cursor_trail_size = 0
 vim.g.neovide_cursor_vfx_mode = ""
 vim.g.neovide_cursor_vfx_particle_density = 20.0
 
-wk.register({
-  ["<F11>"] = { NeovideFullscreen, "Toggle fullscreen in neovide" }
-}, {
-  mode = { "i", "n", "v", "t" }
-})
+-- wk.register({
+--   ["<F11>"] = { NeovideFullscreen, "Toggle fullscreen in neovide" }
+-- }, {
+--   mode = { "i", "n", "v", "t" }
+-- })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
