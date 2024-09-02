@@ -1,6 +1,6 @@
--- local colorscheme = 'gruvbox-baby'
+local colorscheme = 'gruvbox-baby'
 -- local colorscheme = "terafox"
-local colorscheme = "sonokai"
+-- local colorscheme = "sonokai"
 -- local colorscheme = "srcery"
 -- local colorscheme = "zenwritten"
 -- local colorscheme = "everforest"
