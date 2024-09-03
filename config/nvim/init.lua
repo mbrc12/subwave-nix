@@ -733,6 +733,7 @@ require('lazy').setup({
       -- setup_server("pylsp", { cmd = { "rye", "run", "pylsp" } })
       setup_server("pyright", { cmd = { "rye", "run", "pyright-langserver", "--stdio" } })
       setup_server("ruff_lsp", { cmd = { "rye", "run", "ruff-lsp" } })
+      -- setup_server("pylyzer", { cmd = { "rye", "run", "pylyzer", "--server" } })
       setup_server("rust_analyzer", {})
       setup_server("gopls", {
         settings = {
