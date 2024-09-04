@@ -692,7 +692,9 @@ require('lazy').setup({
         },
 
         pico8_ls = {
-        }
+        },
+
+        tsserver = {}
 
       }
 
