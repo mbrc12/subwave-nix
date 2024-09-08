@@ -23,11 +23,6 @@ in
 			tectonic
 			pplatex
 
-			tailwindcss
-
-			unstable.go
-			unstable.gopls
-
 			# see list of fonts here 
 			# https://github.com/NixOS/nixpkgs/blob/e2dd4e18cc1c7314e24154331bae07df76eb582f/pkgs/data/fonts/nerdfonts/shas.nix
 			(nerdfonts.override { fonts = [ "FiraCode" "Iosevka" "JetBrainsMono"]; })
