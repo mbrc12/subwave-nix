@@ -12,7 +12,7 @@ in
 
 			tmux		
 
-			unstable.neovim
+			# unstable.neovim
 
 			tree-sitter
 
@@ -20,7 +20,6 @@ in
 
 			zathura
 
-			tectonic
 			pplatex
 
 			# see list of fonts here 
@@ -37,10 +36,10 @@ in
 				source = ./config/kitty;
 			};
 
-			"${conf}/nvim" = {
-				source = ./config/nvim;
-				recursive = true;
-			};
+			# "${conf}/nvim" = {
+			# 	source = ./config/nvim;
+			# 	recursive = true;
+			# };
 
 			# You still need to install tpm and run <C-x>I to install packages
 			"./.tmux.conf".text = readFile ./config/tmux.conf;
